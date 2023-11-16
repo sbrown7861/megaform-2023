@@ -1,0 +1,39 @@
+@font-face {
+  /* Over The Rainbow Regular */
+  font-family: "Over the Rainbow";
+  src: url("../fonts/OvertheRainbow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  /* Neue Einstellung Regular */
+  font-family: "Over the Rainbow";
+  src: url("../fonts/NeueEinstellung-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  /* League Spartan Light */
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  /* League Spartan Regular */
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  /* League Spartan Bold */
+  font-family: "League Spartan";
+  src: url("../fonts/LeagueSpartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
