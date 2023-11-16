@@ -1,0 +1,11 @@
+# ignore all files starting with . or ~
+.*
+~*
+
+
+# --------------------------------------------------------
+# BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
+# --------------------------------------------------------
+
+# track these files
+!.gitignore
