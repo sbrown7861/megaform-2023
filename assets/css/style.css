@@ -325,7 +325,7 @@ a.instagram {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0)
     ),
-    url("/assets/images/MF_1.jpeg");
+    url("assets/images/MF_1.jpeg");
   background-size: cover;
   background-position: center center;
 }
@@ -335,7 +335,7 @@ a.instagram {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0)
     ),
-    url("/assets/images/MF_3.jpeg");
+    url("assets/images/MF_3.jpeg");
   background-size: cover;
   background-position: center center;
 }
@@ -345,7 +345,7 @@ a.instagram {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0)
     ),
-    url("/assets/images/MF_6.jpeg");
+    url("assets/images/MF_6.jpeg");
   background-size: cover;
   background-position: center center;
 }
@@ -567,7 +567,7 @@ div[id^="bw-widget__schedules-"] > div {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.1)
       ),
-      url("/assets/images/MF_1.jpeg");
+      url("assets/images/MF_1.jpeg");
   }
 
   #page-header-class {
@@ -578,7 +578,7 @@ div[id^="bw-widget__schedules-"] > div {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.1)
       ),
-      url("/assets/images/MF_3.jpeg");
+      url("assets/images/MF_3.jpeg");
   }
 
   #page-header-contact {
@@ -589,7 +589,7 @@ div[id^="bw-widget__schedules-"] > div {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.1)
       ),
-      url("/assets/images/MF_6.jpeg");
+      url("assets/images/MF_6.jpeg");
   }
 
   #header-container {
