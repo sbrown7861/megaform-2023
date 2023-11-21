@@ -61,7 +61,7 @@ a:hover {
 
 /* specifics */
 .padded-row {
-  padding: 0 20px;
+  padding: 0 70px;
 }
 
 .grid {
@@ -320,38 +320,30 @@ a.instagram {
 }
 
 #page-header-book {
-  width: 100%;
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
+      to right,
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0)
     ),
     url("/assets/images/MF_1.jpeg");
   background-size: cover;
   background-position: center center;
 }
-
 #page-header-class {
-  width: 100%;
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
+      to right,
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0)
     ),
     url("/assets/images/MF_3.jpeg");
   background-size: cover;
   background-position: center center;
 }
-
 #page-header-contact {
-  width: 100%;
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
+      to right,
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0)
     ),
     url("/assets/images/MF_6.jpeg");
   background-size: cover;
@@ -359,7 +351,7 @@ a.instagram {
 }
 
 #header-container {
-  padding: 130px 20px 30px;
+  padding: 130px 70px 30px;
 }
 
 #header-title {
@@ -374,7 +366,7 @@ a.instagram {
   font-size: var(--jumbo);
   font-weight: 500;
   letter-spacing: -0.04em;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 #header-description {
@@ -403,9 +395,12 @@ a.instagram {
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  align-items: start;
+  margin-bottom: 70px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  justify-content: center;
 }
 
 .card {
@@ -486,68 +481,160 @@ div[id^="bw-widget__schedules-"] > div {
 
 /* Media Queries */
 
-@media (min-width: 48em) {
+@media (max-width: 56.25em) {
+  /* nav */
+  nav {
+    position: fixed;
+    z-index: 3;
+  }
+
+  nav .logo {
+    width: 40%;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #131418;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px -20px 0;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .nav-links li {
+    margin-bottom: 15px;
+    transition: var(--transition-long);
+    opacity: 0;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+
+  /*Animating Hamburger Icon on Click*/
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  /* end nav */
+
+  .viewport-header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: flex-end;
+  }
+
+  .primary-cta {
+    align-self: flex-start;
+  }
+
   #page-header-book {
+    width: 100%;
     background-image: linear-gradient(
-        to right,
+        to bottom,
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.1)
       ),
       url("/assets/images/MF_1.jpeg");
   }
+
   #page-header-class {
+    width: 100%;
     background-image: linear-gradient(
-        to right,
+        to bottom,
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.1)
       ),
       url("/assets/images/MF_3.jpeg");
   }
+
   #page-header-contact {
+    width: 100%;
     background-image: linear-gradient(
-        to right,
+        to bottom,
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.1)
       ),
       url("/assets/images/MF_6.jpeg");
   }
-  .padded-row {
-    padding: 0 70px;
+
+  #header-container {
+    padding: 130px 20px 45px;
   }
-  .card-container {
-    align-items: start;
-    margin-bottom: 70px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    justify-content: center;
-  }
+
   #header-heading {
     margin-bottom: 30px;
   }
-  #header-container {
-    padding: 130px 45px 45px;
-  }
-}
 
-@media (min-width: 80em) {
-  #header-container {
-    padding: 130px 70px 45px;
+  .padded-row {
+    padding: 0 20px;
   }
-}
 
-@media (max-width: 56.25em) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
   }
 
+  .page-intro p {
+    margin: 30px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card-content {
+    padding: 20px 20px 0;
+  }
+
   h2#why-us {
-    font-size: 50px;
-    line-height: 59px;
+    font-size: var(--large);
+    line-height: unset;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  section .core-value.padded-row.grid,
+  section .core-value.padded-row.grid:nth-last-of-type(even) {
+    flex-direction: column-reverse;
   }
 
   div.core-value {
@@ -568,14 +655,23 @@ div[id^="bw-widget__schedules-"] > div {
   }
 
   .value-content > h3.value-title {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: var(--large);
+    line-height: 1;
     margin-top: 10px;
     margin-bottom: 20px;
   }
 
   div.value-description > p {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: var(--small);
+    line-height: 1.2;
+  }
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 60px;
+  }
+
+  .content-row .map {
+    max-width: 100%;
   }
 }
