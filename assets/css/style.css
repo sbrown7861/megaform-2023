@@ -259,8 +259,13 @@ div.value-description > p {
   padding-bottom: 0;
 }
 
-div.value-description > p:last-of-type {
+div.value-description > p:last-child {
   margin-bottom: 0;
+}
+
+div.value-description > a.primary-cta {
+  display: inline-block;
+  margin-top: 30px;
 }
 
 footer.padded-row {
@@ -367,6 +372,7 @@ a.instagram {
   font-weight: 500;
   letter-spacing: -0.04em;
   margin-bottom: 30px;
+  line-height: 1.1;
 }
 
 #header-description {
@@ -403,6 +409,10 @@ a.instagram {
   justify-content: center;
 }
 
+.card-container.pricing {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .card {
   background-color: var(--dark-grey);
   border-radius: 14px;
@@ -414,16 +424,40 @@ a.instagram {
 }
 
 .card-content {
-  padding: 30px 30px 0;
+  padding: 30px 30px 15px;
 }
 
 .card-content p {
   font-size: var(--regular);
   color: var(--light-grey);
   margin-bottom: 10px;
+  line-height: 1;
 }
 
-.card > .card-content > img.sales-rep-headshot {
+.pricing .card .card-content {
+  flex-grow: 1;
+}
+
+.card healcode-widget a {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto 30px;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border: 2px solid var(--white);
+  border-radius: 7px;
+  transition: var(--transition-normal);
+}
+
+.card healcode-widget a:hover {
+  background: var(--white);
+}
+
+.card > .card-content > img {
   display: block;
   border-radius: 7px;
   margin: 30px auto;
@@ -435,6 +469,17 @@ a.instagram {
   line-height: 32px;
   margin-bottom: 16px;
   text-align: center;
+}
+
+.pricing .card .card-content h3.card-heading {
+  font-size: var(--medium);
+}
+
+span.price {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: var(--small);
 }
 
 .content-row {
@@ -598,6 +643,7 @@ div[id^="bw-widget__schedules-"] > div {
 
   #header-heading {
     margin-bottom: 30px;
+    line-height: unset;
   }
 
   .padded-row {
