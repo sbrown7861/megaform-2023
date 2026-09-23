@@ -1,209 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Megaform Eugene | Stronger, Together</title>
     <meta
       name="description"
-      content="Megaform is committed to building a strong community by working together to help our clients meet their fitness goals. We are located in Eugene Oregon."
+      content="Eugene's Lagree fitness studio. Low impact, high intensity, full-body classes on the Megaformer."
     />
-    <!-- Open Graph -->
-    <meta property="og:url" content="index.html" />
-    <meta
-      property="og:title"
-      content="Eugene's premiere Lagree pilates studio"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      property="og:description"
-      content="Megaform is committed to building a strong community by working together to help our clients meet their fitness goals. We are located in Eugene Oregon."
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b63ff'/%3E%3Cpath d='M15 42V22h6l11 12 11-12h6v20h-6V31L32 43 21 31v11z' fill='white'/%3E%3C/svg%3E"
     />
-    <meta property="og:image" content="assets/images/MF_1.jpeg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Megaform Eugene | Eugene's premiere Lagree pilates studio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/brand-overrides.css" />
   </head>
   <body>
-    <a href="#main" class="skip-to-main-link">Skip to main content</a>
-    <nav class="padded-row">
-      <div class="logo">
-        <a href="#">
-          <img
-            src="assets/images/megaform_logo_full.png"
-            alt="Megaform Eugene Logo"
-          />
-        </a>
-      </div>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="book-now.html">Book Now</a></li>
-        <li><a href="pricing.html">pricing</a></li>
-        <li><a href="the-class.html">The Class</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <video
-      poster=""
-      src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/msqd2XJ/videoblocks-concentrated-sportsman-doing-hard-exercise-with-heavy-ropes-while-working-out-alone-in-dark-gym_rjgevgb19m__68ca80c4b12b4c6dc82d1c456224189c__P360.mp4"
-      autoplay
-      loop
-      playsinline
-      muted
-    ></video>
-    <header class="viewport-header padded-row grid">
-      <h1>Eugene's premiere Lagree pilates studio</h1>
-      <a class="primary-cta" href="book-now.html">Book Now</a>
+    <header class="nav" id="top">
+      <a class="brand logo-brand" href="#top" aria-label="Megaform home"
+        ><img
+          src="images/megaform-logo-black.png"
+          alt="Megaform Lagree Fitness"
+      /></a>
+      <nav aria-label="Main navigation">
+        <a href="#experience">The Workout</a>
+        <a href="#classes">Classes</a>
+        <a href="#first">New Here?</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="nav-cta" href="/book-now.html">Book a class</a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </header>
-    <main id="main">
-      <div class="page-intro padded-row grid">
+
+    <main>
+      <section class="hero">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Megaform Lagree Fitness logo"
+        >
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="images/megaform-class-2026-poster.jpg"
+            aria-label="Megaform Eugene clients training on Megaformers"
+          >
+            <source src="images/megaform-class-2026.mp4" type="video/mp4" />
+          </video>
+          <img
+            class="hero-logo"
+            src="images/megaform-logo-white.png"
+            alt="Megaform Lagree Fitness"
+          />
+        </div>
+        <div class="hero-shade"></div>
+        <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
+      </section>
+
+      <section class="hero-details">
+        <div>
+          <p class="eyebrow">Lagree fitness · Eugene, Oregon</p>
+          <h1>STRONGER<br /><em>starts here.</em></h1>
+        </div>
+        <div class="hero-details-copy">
+          <p class="hero-intro">
+            Low impact. High intensity. A workout that challenges your strength,
+            endurance and control.
+          </p>
+          <div class="hero-actions">
+            <a class="btn black" href="/book-now.html">Book your Mega</a>
+            <a class="text-link" href="#first"
+              >First class? Start here <span>↓</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Why train at Megaform">
+        <div><strong>10</strong><span>Megaformers</span></div>
+        <div><strong>45</strong><span>Minute classes</span></div>
+        <div><strong>100%</strong><span>Full-body focus</span></div>
+        <div><strong>WOMAN-OWNED</strong><span>Local to Eugene</span></div>
+      </section>
+
+      <section class="experience" id="experience">
+        <img
+          class="mf-watermark"
+          src="images/megaform-mf-black.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="section-label"><span>01</span> THE MACHINE + METHOD</div>
+        <div class="statement">
+          <h2>The Megaformer.<br /><em>Built for tension.</em></h2>
+          <div class="statement-copy">
+            <p>
+              The Megaformer combines a moving carriage, stable platforms,
+              handlebars, cables and straps with adjustable spring-loaded
+              resistance.
+            </p>
+            <p>
+              As you push, pull and stabilize, the springs create continuous
+              resistance through the working range. Paired with Lagree’s slow
+              tempo, the resistance keeps your muscles under tension longer.
+            </p>
+            <a class="text-link" href="#classes"
+              >Explore the workout <span>→</span></a
+            >
+          </div>
+        </div>
+        <div class="machine-grid">
+          <article>
+            <b>01</b>
+            <h3>Spring-loaded resistance</h3>
+            <p>
+              Adjustable spring settings scale each exercise and keep the body
+              working against resistance.
+            </p>
+          </article>
+          <article>
+            <b>02</b>
+            <h3>Moving carriage</h3>
+            <p>
+              The carriage adds controlled instability, asking your core and
+              stabilizing muscles to stay engaged.
+            </p>
+          </article>
+          <article>
+            <b>03</b>
+            <h3>Platforms + straps</h3>
+            <p>
+              Multiple positions create endless ways to focus on and increase
+              strength, endurance, balance, and control.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-image" id="classes">
+        <div class="photo-panel">
+          <img
+            src="images/megaform-action-2026.jpg"
+            alt="Megaform Eugene instructor coaching a client on the Megaformer"
+          />
+        </div>
+        <div class="blue-panel">
+          <p class="eyebrow light">THE WORKOUT</p>
+          <img
+            class="mf-panel-mark"
+            src="images/megaform-mf-white.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h2>
+            Shake.<br />Sweat.<br /><em>Sore,</em
+            ><small>but always safe.</small>
+          </h2>
+          <p>
+            Intentional movement. Certified coaching. A community that makes
+            showing up the best part of your day.
+          </p>
+          <ul>
+            <li><span>01</span> Strength + endurance</li>
+            <li><span>02</span> Core + stability</li>
+            <li><span>03</span> Balance + control</li>
+          </ul>
+          <a class="btn white" href="/book-now.html">View class schedule</a>
+        </div>
+      </section>
+
+      <section class="formats" aria-labelledby="formats-title">
+        <div class="section-label"><span>02</span> CHOOSE YOUR MEGA</div>
+        <div class="formats-heading">
+          <h2 id="formats-title">
+            One method.<br /><em>Three ways to move.</em>
+          </h2>
+          <p>
+            Every format is rooted in slow, controlled movement and certified
+            coaching. Choose the challenge your body needs today.
+          </p>
+        </div>
+        <div class="format-grid">
+          <article class="format-card signature">
+            <span>01</span>
+            <h3>M3K</h3>
+            <p>
+              The signature Megaform workout—low impact, high intensity and
+              designed to meet you at your level.
+            </p>
+            <a href="/book-now.html">Find a class →</a>
+          </article>
+          <article class="format-card">
+            <span>02</span>
+            <h3>Revive</h3>
+            <p>
+              A thoughtful reset with controlled strength, mobility and a pace
+              that leaves you feeling restored.
+            </p>
+            <a href="/book-now.html">Find a class →</a>
+          </article>
+          <article class="format-card">
+            <span>03</span>
+            <h3>Mega Flow</h3>
+            <p>
+              Fluid movement meets Megaform strength for a connected, energizing
+              full-body experience.
+            </p>
+            <a href="/book-now.html">Find a class →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="first" id="first">
+        <div class="section-label"><span>03</span> YOUR FIRST MEGA</div>
+        <div class="first-grid">
+          <div>
+            <h2>New here?<br /><em>We’ve got you.</em></h2>
+            <p>
+              You don’t need experience. Arrive 10–15 minutes early, bring water
+              and wear comfortable workout clothes. Grip socks are required and
+              available at the studio.
+            </p>
+            <a class="btn black" href="/book-now.html">Book your first class</a>
+          </div>
+          <div class="steps">
+            <article>
+              <b>01</b>
+              <div>
+                <h3>Choose your class</h3>
+                <p>Find a time that works and reserve your Megaformer.</p>
+              </div>
+            </article>
+            <article>
+              <b>02</b>
+              <div>
+                <h3>Arrive 10–15 minutes early</h3>
+                <p>
+                  Check in, meet your instructor and get comfortable with the
+                  machine.
+                </p>
+              </div>
+            </article>
+            <article>
+              <b>03</b>
+              <div>
+                <h3>Follow the tempo</h3>
+                <p>
+                  Modifications are always available, but your instructor sets
+                  the pace to keep the work slow, controlled and effective.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="method-note">
+          <p class="eyebrow">WHY SLOW WORKS</p>
+          <p>
+            Slow, controlled movement keeps your muscles working under tension.
+            This challenges slow-twitch endurance and deep-core
+            control—including pelvic-floor coordination—while progressively
+            loading the muscles and connective tissues that support your joints.
+          </p>
+        </div>
+      </section>
+
+      <section class="community">
+        <img
+          src="images/megaform-community-2026.jpg"
+          alt="Megaform Eugene instructor coaching a client in the studio"
+        />
+        <div>
+          <p class="eyebrow light">MORE THAN A WORKOUT</p>
+          <h2>Come for the burn.<br /><em>Stay for the people.</em></h2>
+          <p>
+            Megaform is a space to get stronger, feel supported and celebrate
+            what your body can do.
+          </p>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="section-label"><span>04</span> MEET THE TEAM</div>
+        <div class="team-heading">
+          <div>
+            <p class="eyebrow">LAGREE-CERTIFIED INSTRUCTORS</p>
+            <h2>The people behind<br /><em>your Mega.</em></h2>
+          </div>
+          <p>
+            Our instructors are all Lagree certified and committed to
+            intentional form, clear instruction and the kind of encouragement
+            that helps you find your strongest self.
+          </p>
+        </div>
+        <div class="team-gallery" aria-label="Megaform Eugene instructors">
+          <figure>
+            <img
+              src="images/megaform-team-form-2026.jpg"
+              alt="Megaform Eugene instructor guiding a client through precise form on the Megaformer"
+            />
+            <figcaption>Form + focus</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/megaform-studio-energy-2025.jpg"
+              alt="Megaform team member lifting weights in the blue-lit Eugene studio"
+            />
+            <figcaption>Studio energy</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/megaform-team-energy-2026-v5.jpg"
+              alt="Megaform Eugene instructor bringing energy to the 2026 team photo session"
+            />
+            <figcaption>Lagree certified</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="section-label"><span>05</span> FIND YOUR RHYTHM</div>
+        <div class="price-heading">
+          <h2>Start your<br /><em>Mega.</em></h2>
+          <p>
+            Three introductory ways to experience Megaform, meet our certified
+            instructors and find the option that feels right for you.
+          </p>
+        </div>
+        <div class="cards">
+          <article>
+            <p>FIRST-TIMER RATE</p>
+            <h3>$25</h3>
+            <span>Your first Megaform class</span
+            ><a href="/book-now.html">Book your first class</a>
+          </article>
+          <article class="featured">
+            <div class="tag">BEST VALUE</div>
+            <p>TWO WEEKS UNLIMITED</p>
+            <h3>$89</h3>
+            <span>Unlimited classes for 14 days</span
+            ><a href="/book-now.html">Start two weeks</a>
+          </article>
+          <article>
+            <p>3-CLASS PACKAGE</p>
+            <h3>$47</h3>
+            <span>Introductory price · normally $75</span
+            ><a href="/book-now.html">Get three classes</a>
+          </article>
+        </div>
+        <div class="returning-pricing">
+          <p>ALREADY A CLIENT?</p>
+          <div><strong>$30</strong><span>Drop-in class</span></div>
+          <div><strong>From $149</strong><span>Monthly memberships</span></div>
+          <a href="/book-now.html">View all pricing + packages</a>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow light">YOUR MEGA IS WAITING</p>
+        <h2>Ready to feel<br /><em>the difference?</em></h2>
+        <a class="btn white" href="/book-now.html">Book a class</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand logo-brand" href="#top"
+        ><img
+          src="images/megaform-logo-black.png"
+          alt="Megaform Lagree Fitness"
+      /></a>
+      <div>
+        <p>485 Coburg Rd.<br />Eugene, Oregon</p>
         <p>
-          <span>Megaform is committed to building a strong community</span> by
-          working together to help our clients meet their fitness goals. We are
-          passionate about delivering a balanced and intense workout with a deep
-          knowledge of the body while maintaining a supportive and encouraging
-          experience.
+          <a href="tel:4582018969">458-201-8969</a><br /><a
+            href="mailto:megaform@megaformeugene.com"
+            >megaform@megaformeugene.com</a
+          >
         </p>
       </div>
-      <h2 id="why-us" class="padded-row">Benefits of a Megaform Class</h2>
-      <div class="core-value padded-row grid">
-        <div class="value-content-wrapper">
-          <hr />
-          <div class="value-content">
-            <h3 class="value-title">A Stronger Core</h3>
-            <div class="value-description">
-              <p>
-                The Megaformer offers exercises targeting the core, making it
-                easier to build strength and stability in your midsection.
-              </p>
-              <p>
-                While this might seem like too big of a challenge for some, the
-                Megaformer offers a low-impact workout that can be adapted for
-                any fitness level.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="assets/images/MF_1.jpeg"
-          alt="A young woman using a Megaformer machine"
-        />
-      </div>
-      <div class="core-value padded-row grid reverse">
-        <div class="value-content-wrapper">
-          <hr />
-          <div class="value-content">
-            <h3 class="value-title">Greater Endurance</h3>
-            <div class="value-description">
-              <p>
-                The Megaformer offers a cardiovascular workout with a consistent
-                increase in your heart rate throughout the entire workout.
-              </p>
-              <p>
-                The Megaformer offers slow, controlled, low impact moves that
-                decrease stress on your joints with continuous muscle
-                stimulation, allowing you to get more out of your workouts and
-                stay in your cardio zone.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="assets/images/MF_2.png"
-          alt="A young woman preforming a lunge on the Megaformer machine"
-        />
-      </div>
-      <div class="core-value padded-row grid">
-        <div class="value-content-wrapper">
-          <hr />
-          <div class="value-content">
-            <h3 class="value-title">Physical &amp; Mental Strength</h3>
-            <div class="value-description">
-              <p>
-                The Megaformer offers 5 levels of resistance allowing for anyone
-                to participate reguardless of where they are in their fitness
-                jounery, while leaving room to continue building strength.
-              </p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="assets/images/MF_3.jpeg"
-          alt="A young woman preforming a plank on the Megaformer machine"
-        />
-      </div>
-      <div class="core-value padded-row grid reverse">
-        <div class="value-content-wrapper">
-          <hr />
-          <div class="value-content">
-            <h3 class="value-title">Better Balance</h3>
-            <div class="value-description">
-              <p>
-                Megaform classes combine aspects of yoga, pilates, and strength
-                training leading to improved core strength and an overall
-                increase in Balance.
-              </p>
-              <p>
-                The low impact characteristics of Megaform classes aid in
-                sparing your joints leading to reduced pressure and increasing
-                your overall balance.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="assets/images/MF_4.jpeg"
-          alt="A young woman using a Megaformer machine"
-        />
-      </div>
-    </main>
-    <footer class="padded-row grid">
       <div>
-        <img src="assets/images/MF_logo_white.png" alt="Megaform Eugene Logo" />
+        <a href="/book-now.html">Book a class</a
+        ><a href="#experience">The workout</a><a href="#first">New here?</a
+        ><a href="#pricing">Pricing</a>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel://1-458-201-8969">458-201-8969</a></li>
-          <li>
-            <a
-              href="https://www.google.com/maps/place/485+Coburg+Rd,+Eugene,+OR+97401/@44.0642516,-123.0784917,13z/data=!4m5!3m4!1s0x54c0e1fbfa3a490d:0x1b6e9fae36ce9585!8m2!3d44.06756!4d-123.071041"
-              target="_blank"
-              >485 Coburg Rd Suite F <br />
-              Eugene, OR 97401</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4>Social</h4>
-        <ul class="socials">
-          <li>
-            <a
-              class="social-link facebook"
-              href="https://www.facebook.com/megaform.mf/"
-              target="_blank"
-              >facebook</a
-            >
-          </li>
-          <li>
-            <a
-              class="social-link instagram"
-              href="https://www.instagram.com/megaform.mf/"
-              target="_blank"
-              >instagram</a
-            >
-          </li>
-        </ul>
+      <div class="social">
+        <a href="https://www.instagram.com/megaformeugene/">Instagram ↗</a>
+        <p>© 2026 Megaform Eugene</p>
       </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
