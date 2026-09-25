@@ -83,6 +83,7 @@ img {
   background: var(--ink);
   color: #fff;
   padding: 18px 22px;
+  min-width: 180px;
 }
 .menu {
   display: none;
