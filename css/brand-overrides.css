@@ -160,7 +160,8 @@
   align-items: end;
   padding: 65px 0;
 }
-.formats-heading h2 {
+.formats-heading h2,
+.h2 {
   font-family: "Manrope", sans-serif;
   font-size: clamp(3rem, 6.2vw, 7.2rem);
   line-height: 0.9;
